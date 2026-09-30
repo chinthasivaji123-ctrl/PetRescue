@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetRescue - Find Pets</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <header class="navbar">
+
+        <div class="logo">
+            🐾 PetRescue
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="pets.html" class="active">
+                Find Pets
+            </a>
+
+            <a href="report.html">
+                Report Pet
+            </a>
+
+            <a href="adoption.html">
+                Adoption
+            </a>
+
+            <a href="rescue.html">
+                Rescue
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="page-header">
+
+        <h1>Find Pets</h1>
+
+        <p>
+            Search for pets that need help.
+        </p>
+
+    </section>
+
+
+    <!-- Search and Filter -->
+
+    <section class="search-section">
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search by pet name or location..."
+            >
+
+
+            <select id="typeFilter">
+
+                <option value="All">
+                    All Types
+                </option>
+
+                <option value="Dog">
+                    Dogs
+                </option>
+
+                <option value="Cat">
+                    Cats
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <select id="conditionFilter">
+
+                <option value="All">
+                    All Conditions
+                </option>
+
+                <option value="Lost">
+                    Lost
+                </option>
+
+                <option value="Injured">
+                    Injured
+                </option>
+
+                <option value="Abandoned">
+                    Abandoned
+                </option>
+
+                <option value="Found">
+                    Found
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+    <!-- Pet Cards -->
+
+    <section class="section">
+
+        <div
+            id="petList"
+            class="pet-grid"
+        >
+
+            <!-- JavaScript will add pets -->
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>🐾 PetRescue</h3>
+
+            <p>
+                Helping animals find safety, care and loving homes.
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 PetRescue. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

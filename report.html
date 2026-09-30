@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PetRescue - Report Pet</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            🐾 PetRescue
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="pets.html">Find Pets</a>
+
+            <a href="report.html" class="active">Report Pet</a>
+
+            <a href="adoption.html">Adoption</a>
+
+            <a href="rescue.html">Rescue</a>
+
+            <a href="about.html">About</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <h1>Report a Pet</h1>
+
+        <p>
+            Help an animal by sharing its information.
+        </p>
+
+    </section>
+
+
+    <!-- Report Form -->
+
+    <section class="form-section">
+
+        <div class="form-container">
+
+            <h2>Pet Information</h2>
+
+            <p class="form-description">
+                Please provide accurate information about the pet.
+            </p>
+
+
+            <form id="petReportForm">
+
+
+                <div class="form-group">
+
+                    <label for="petName">
+                        Pet Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="petName"
+                        placeholder="Enter pet name"
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="petType">
+                            Pet Type
+                        </label>
+
+                        <select id="petType">
+
+                            <option value="">
+                                Select type
+                            </option>
+
+                            <option value="Dog">
+                                Dog
+                            </option>
+
+                            <option value="Cat">
+                                Cat
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="condition">
+                            Condition
+                        </label>
+
+                        <select id="condition">
+
+                            <option value="">
+                                Select condition
+                            </option>
+
+                            <option value="Lost">
+                                Lost
+                            </option>
+
+                            <option value="Injured">
+                                Injured
+                            </option>
+
+                            <option value="Abandoned">
+                                Abandoned
+                            </option>
+
+                            <option value="Found">
+                                Found
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="Enter location"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe the pet and situation..."
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="petImage">
+                        Pet Image
+                    </label>
+
+                    <input
+                        type="file"
+                        id="petImage"
+                        accept="image/*"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="contact">
+                        Contact Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="contact"
+                        placeholder="Enter contact number"
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn primary-btn full-btn"
+                >
+                    Submit Report
+                </button>
+
+
+                <div id="formMessage"></div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>🐾 PetRescue</h3>
+
+            <p>
+                Helping animals find safety, care and loving homes.
+            </p>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 PetRescue. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
